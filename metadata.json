@@ -1,0 +1,6 @@
+{
+  "name": "StudySail - Be Your Own Agent",
+  "description": "Educational consultancy and scholarship guidance platform with dedicated scholarship databases, university application services, and student mentorship.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Scholarship & Funding guidance from StudySail. A mapped set of scholarships your profile genuinely qualifies for, plus a funding plan and deadline calendar.">
+    <title>Scholarship & Funding | StudySail — Be Your Own Agent</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F3EEDD',
+                        creamlight: '#FAF7EC',
+                        creamwhite: '#FEFCF6',
+                        ink: '#032249',
+                        amber: '#BD9147',
+                        amberdark: '#96742E',
+                        muted: '#5F6B79'
+                    },
+                    fontFamily: {
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        body: ['"Inter"', 'sans-serif'],
+                        script: ['"Caveat"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Global Styles -->
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .font-script {
+            font-family: 'Caveat', cursive;
+        }
+
+        body {
+            background-color: #FEFCF6;
+            color: #032249;
+        }
+
+        .dot-grid {
+            background-image: radial-gradient(circle, rgba(3, 34, 73, 0.10) 1px, transparent 1px);
+            background-size: 22px 22px;
+        }
+
+        .dashed-x {
+            background-image: repeating-linear-gradient(to right, rgba(3, 34, 73, 0.18) 0, rgba(3, 34, 73, 0.18) 6px, transparent 6px, transparent 12px);
+            height: 1px;
+        }
+
+        .nav-item:hover .nav-dropdown {
+            display: block;
+        }
+
+        .lift {
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(3, 34, 73, 0.08);
+        }
+
+        ::selection {
+            background: #BD9147;
+            color: #032249;
+        }
+
+        a,
+        button {
+            cursor: pointer;
+        }
+
+        .stamp {
+            transform: rotate(-8deg);
+            border: 2px solid #96742E;
+            color: #96742E;
+        }
+    </style>
+</head>
+
+<body class="font-body text-ink antialiased flex flex-col min-h-screen">
+
+    <!-- DYNAMIC HEADER MOUNT -->
+    <div id="global-header-root"></div>
+
+    <!-- MAIN CONTENT -->
+    <main role="main" class="flex-grow">
+
+        <!-- Hero Section -->
+        <section class="dot-grid bg-creamwhite pt-16 pb-14 border-b border-black/5"
+            aria-labelledby="service-hero-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <a href="./Service.html"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-ink transition-colors">
+                    <span aria-hidden="true">←</span> All services
+                </a>
+
+                <div class="mt-8 flex items-center gap-3">
+                    <span
+                        class="inline-flex items-center bg-cream border border-black/10 rounded-full px-3 py-1 text-xs font-bold tracking-widest text-amberdark">SS-05</span>
+                    <span class="text-xs font-semibold tracking-widest text-muted">SCHOLARSHIP &amp; FUNDING</span>
+                </div>
+
+                <h1 id="service-hero-heading"
+                    class="font-display font-bold text-4xl sm:text-5xl lg:text-[3.4rem] mt-5 leading-[1.05] max-w-3xl">
+                    Scholarship & Funding
+                </h1>
+
+                <p class="text-muted text-base lg:text-lg mt-6 max-w-2xl leading-relaxed">
+                    Not a list of famous awards you will never win — a mapped set of scholarships your profile
+                    genuinely qualifies for.
+                </p>
+
+                <div class="mt-8 flex flex-wrap items-center gap-4">
+                    <a href="./Contact.html" aria-label="Book a free consultation session"
+                        class="book-btn shrink-0 bg-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                        Book a free session
+                    </a>
+                    <a href="./Service.html"
+                        class="shrink-0 bg-transparent border border-black/15 hover:border-black/30 text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                        Compare services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deliverables Section -->
+        <section class="bg-cream py-20 border-b border-black/5" aria-labelledby="deliverables-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— WHAT YOU GET</p>
+                <h2 id="deliverables-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Deliverables,
+                    not promises</h2>
+
+                <div class="grid lg:grid-cols-[1fr_1fr_0.85fr] gap-6 lg:gap-8">
+                    <!-- Deliverables 2x2 grid -->
+                    <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+                        <article class="bg-white border border-black/10 rounded-2xl p-6">
+                            <h3 class="font-display font-bold text-lg mb-2">Eligibility map</h3>
+                            <p class="text-sm text-muted leading-relaxed">Awards matched to your grades, country,
+                                subject and nationality.</p>
+                        </article>
+                        <article class="bg-white border border-black/10 rounded-2xl p-6">
+                            <h3 class="font-display font-bold text-lg mb-2">Essay coaching</h3>
+                            <p class="text-sm text-muted leading-relaxed">Feedback on scholarship essays and
+                                leadership statements.</p>
+                        </article>
+                        <article class="bg-white border border-black/10 rounded-2xl p-6">
+                            <h3 class="font-display font-bold text-lg mb-2">Funding plan</h3>
+                            <p class="text-sm text-muted leading-relaxed">Tuition, living costs, loans and part-time
+                                work rights in one sheet.</p>
+                        </article>
+                        <article class="bg-white border border-black/10 rounded-2xl p-6">
+                            <h3 class="font-display font-bold text-lg mb-2">Deadline calendar</h3>
+                            <p class="text-sm text-muted leading-relaxed">Scholarship deadlines usually fall before
+                                admission deadlines — mapped backwards.</p>
+                        </article>
+                    </div>
+
+                    <!-- Who this is for sidebar -->
+                    <aside class="bg-white border border-black/10 rounded-2xl p-6 h-fit">
+                        <h3 class="font-display font-bold text-base mb-4">Who this is for</h3>
+                        <ul class="space-y-3 list-none p-0 m-0">
+                            <li class="flex items-start gap-2.5 text-sm">
+                                <span class="text-amberdark mt-0.5" aria-hidden="true">✓</span>
+                                <span>Students needing 30–100% fee reduction to make the plan viable</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-sm">
+                                <span class="text-amberdark mt-0.5" aria-hidden="true">✓</span>
+                                <span>Applicants targeting Chevening, DAAD, Erasmus+ or university merit awards</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-sm">
+                                <span class="text-amberdark mt-0.5" aria-hidden="true">✓</span>
+                                <span>Families planning education loans</span>
+                            </li>
+                        </ul>
+
+                        <div class="dashed-x my-5" aria-hidden="true"></div>
+
+                        <p class="text-xs font-semibold tracking-widest text-muted mb-3">INCLUDED</p>
+                        <ul class="space-y-2 list-none p-0 m-0 text-sm text-ink">
+                            <li>• Eligibility mapping</li>
+                            <li>• Essay coaching</li>
+                            <li>• Deadline calendar</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dedicated Scholarships List Section -->
+        <section class="bg-creamwhite py-20 border-b border-black/5" aria-labelledby="scholarships-list-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— FULL SCHOLARSHIP PROGRAMS</p>
+                <h2 id="scholarships-list-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Dedicated government and foundation scholarships</h2>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="./Services/si-scholarship-support.html" class="lift bg-white border border-black/10 rounded-2xl p-6 block">
+                        <p class="text-xs font-bold tracking-widest text-amberdark mb-2">SS-09 · SWEDEN</p>
+                        <h3 class="font-display font-bold text-lg mb-2 text-ink">SI Scholarship</h3>
+                        <p class="text-sm text-muted">Complete support for the Swedish Institute Scholarship.</p>
+                    </a>
+                    <a href="./Services/stipendium-hungaricum-support.html" class="lift bg-white border border-black/10 rounded-2xl p-6 block">
+                        <p class="text-xs font-bold tracking-widest text-amberdark mb-2">SS-10 · HUNGARY</p>
+                        <h3 class="font-display font-bold text-lg mb-2 text-ink">Stipendium Hungaricum</h3>
+                        <p class="text-sm text-muted">Hungarian government scholarship complete support.</p>
+                    </a>
+                    <a href="./Services/chinese-csc-scholarship-support.html" class="lift bg-white border border-black/10 rounded-2xl p-6 block">
+                        <p class="text-xs font-bold tracking-widest text-amberdark mb-2">SS-11 · CHINA</p>
+                        <h3 class="font-display font-bold text-lg mb-2 text-ink">Chinese CSC Scholarship</h3>
+                        <p class="text-sm text-muted">Chinese Government Scholarship and university application.</p>
+                    </a>
+                    <a href="./Services/chevening-scholarship-support.html" class="lift bg-white border border-black/10 rounded-2xl p-6 block">
+                        <p class="text-xs font-bold tracking-widest text-amberdark mb-2">SS-12 · UK</p>
+                        <h3 class="font-display font-bold text-lg mb-2 text-ink">Chevening Scholarship</h3>
+                        <p class="text-sm text-muted">Complete guidance including all 4 Chevening essays.</p>
+                    </a>
+                    <a href="./Services/czech-republic-scholarship-support.html" class="lift bg-white border border-black/10 rounded-2xl p-6 block">
+                        <p class="text-xs font-bold tracking-widest text-amberdark mb-2">SS-13 · CZECH REPUBLIC</p>
+                        <h3 class="font-display font-bold text-lg mb-2 text-ink">Czech Republic Scholarship</h3>
+                        <p class="text-sm text-muted">Government scholarship support from start to finish.</p>
+                    </a>
+                    <a href="./Services/fulbright-scholarship-support.html" class="lift bg-white border border-black/10 rounded-2xl p-6 block">
+                        <p class="text-xs font-bold tracking-widest text-amberdark mb-2">SS-14 · USA</p>
+                        <h3 class="font-display font-bold text-lg mb-2 text-ink">Fulbright Scholarship</h3>
+                        <p class="text-sm text-muted">Personal statement, research objectives & CV guidance.</p>
+                    </a>
+                    <a href="./Services/mext-scholarship-support.html" class="lift bg-white border border-black/10 rounded-2xl p-6 block">
+                        <p class="text-xs font-bold tracking-widest text-amberdark mb-2">SS-15 · JAPAN</p>
+                        <h3 class="font-display font-bold text-lg mb-2 text-ink">MEXT Scholarship</h3>
+                        <p class="text-sm text-muted">Japanese Government (MEXT) complete guidance.</p>
+                    </a>
+                    <a href="./Services/erasmus-and-other-scholarships.html" class="lift bg-white border border-black/10 rounded-2xl p-6 block">
+                        <p class="text-xs font-bold tracking-widest text-amberdark mb-2">SS-16 · ON DEMAND</p>
+                        <h3 class="font-display font-bold text-lg mb-2 text-ink">Erasmus & Other Scholarships</h3>
+                        <p class="text-sm text-muted">Flexible support customized to specific scholarships.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Runs Section -->
+        <section class="bg-creamwhite py-20 border-b border-black/5" aria-labelledby="process-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— HOW IT RUNS</p>
+                <h2 id="process-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Three steps, your
+                    hands on the controls</h2>
+
+                <div class="grid sm:grid-cols-3 gap-6 lg:gap-8">
+                    <article class="border border-black/10 rounded-2xl p-6">
+                        <p class="font-script text-amberdark text-4xl leading-none mb-3">01</p>
+                        <h3 class="font-display font-bold text-lg mb-2">Funding gap check</h3>
+                        <p class="text-sm text-muted leading-relaxed">How much you actually need to cover.</p>
+                    </article>
+                    <article class="border border-black/10 rounded-2xl p-6">
+                        <p class="font-script text-amberdark text-4xl leading-none mb-3">02</p>
+                        <h3 class="font-display font-bold text-lg mb-2">Shortlist awards</h3>
+                        <p class="text-sm text-muted leading-relaxed">Only those you are eligible for today.</p>
+                    </article>
+                    <article class="border border-black/10 rounded-2xl p-6">
+                        <p class="font-script text-amberdark text-4xl leading-none mb-3">03</p>
+                        <h3 class="font-display font-bold text-lg mb-2">Apply and review</h3>
+                        <p class="text-sm text-muted leading-relaxed">You submit; we review essays and references
+                            first.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="dot-grid bg-cream py-20" aria-labelledby="faq-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— QUESTIONS</p>
+                <h2 id="faq-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">About this service</h2>
+
+                <div class="grid sm:grid-cols-2 gap-6 mb-16">
+                    <article class="bg-creamwhite border border-black/10 rounded-2xl p-6">
+                        <h3 class="font-display font-bold text-base mb-2">Can I get a full scholarship?</h3>
+                        <p class="text-sm text-muted leading-relaxed">Full funding is rare and highly competitive.
+                            Partial merit awards of £2,000–£6,000 are far more attainable and we target those
+                            first.</p>
+                    </article>
+                    <article class="bg-creamwhite border border-black/10 rounded-2xl p-6">
+                        <h3 class="font-display font-bold text-base mb-2">Do you help with education loans?</h3>
+                        <p class="text-sm text-muted leading-relaxed">We explain the documents Bangladeshi banks
+                            require and how loan letters are read by visa officers.</p>
+                    </article>
+                </div>
+
+                <!-- Next Step CTA -->
+                <div
+                    class="bg-creamwhite border border-black/10 rounded-2xl px-8 py-10 lg:px-10 lg:py-12 relative overflow-hidden shadow-sm">
+                    <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— NEXT STEP</p>
+                    <h2 class="font-display font-bold text-2xl lg:text-3xl mb-4 max-w-md">Find the awards you can
+                        actually win.</h2>
+                    <p class="text-muted text-sm max-w-md mb-8 leading-relaxed">We map your CGPA, test score and
+                        subject against live scholarship criteria and hand you a deadline calendar you can work
+                        backwards from.</p>
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <a href="./Contact.html" aria-label="Map my scholarship eligibility"
+                            class="book-btn shrink-0 bg-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                            Map my scholarships
+                        </a>
+                        <a href="./Service.html"
+                            class="shrink-0 bg-transparent border border-black/15 hover:border-black/30 text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                            Browse all services
+                        </a>
+                    </div>
+
+                    <div class="hidden lg:block absolute top-8 right-10 text-right">
+                        <span
+                            class="stamp inline-block font-display font-bold text-sm tracking-widest px-4 py-2 rounded-lg">FUNDED</span>
+                        <p class="text-[11px] font-semibold tracking-widest text-muted mt-3">MOST AWARDS CLOSE 6–9
+                            MONTHS BEFORE INTAKE.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Services Section -->
+        <section class="bg-creamwhite py-20" aria-labelledby="other-services-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— CONTINUE</p>
+                <h2 id="other-services-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Other
+                    services</h2>
+
+                <div id="other-services-grid" class="grid sm:grid-cols-3 gap-6"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- DYNAMIC FOOTER MOUNT -->
+    <div id="global-footer-root"></div>
+
+    <!-- Global Component Script -->
+    <script src="./assets/script/global.js"></script>
+
+    <!-- Page-Specific Script -->
+    <script>
+        const otherServices = [
+            { code: "SS-01", title: "University & Course Selection", desc: "Personalized shortlisting based on your profile, budget and career goals.", href: "./Services/university-course-selection.html" },
+            { code: "SS-02", title: "Application Assistance", desc: "Step-by-step help preparing and submitting your own application.", href: "./Services/application-assistance.html" },
+            { code: "SS-03", title: "SOP & LOR Guidance", desc: "Coaching so you write a compelling Statement of Purpose yourself.", href: "./Services/sop-lor-guidance.html" }
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const grid = document.getElementById("other-services-grid");
+            if (grid) {
+                grid.innerHTML = otherServices.map(s => `
+            <a href="${s.href}" class="lift block bg-white border border-black/10 rounded-2xl p-6" aria-label="${s.title}">
+              <p class="text-xs font-bold tracking-widest text-amberdark mb-2">${s.code}</p>
+              <h3 class="font-display font-bold text-lg mb-2 text-ink">${s.title}</h3>
+              <p class="text-sm text-muted leading-relaxed">${s.desc}</p>
+            </a>
+          `).join("");
+            }
+        });
+    </script>
+</body>
+
+</html>

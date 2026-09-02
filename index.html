@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="StudySail — 100% Online Educational Consultancy and Study Abroad Coaching. Be your own agent.">
+  <title>StudySail — Be Your Own Agent</title>
+
+  <!-- Tailwind CSS (required) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F3EEDD',
+            creamlight: '#FAF7EC',
+            creamwhite: '#FEFCF6',
+            ink: '#032249',
+            amber: '#BD9147',
+            amberdark: '#96742E',
+            muted: '#5F6B79'
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+            script: ['"Caveat"', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./assets/CSS/Style.css">
+</head>
+
+<body class="font-body text-ink antialiased">
+
+  <!-- ===================== HEADER (dynamic) ===================== -->
+  <div id="global-header-root"></div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="top" class="dot-grid bg-cream pt-16 pb-20 lg:pt-20 lg:pb-24 border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center">
+
+      <div>
+        <span
+          class="inline-flex items-center gap-2 bg-creamwhite border border-black/10 rounded-full px-4 py-1.5 text-xs font-semibold tracking-wide text-amberdark">
+          <i data-lucide="video" class="w-3.5 h-3.5 text-amber"></i>
+          100% ONLINE CONSULTANCY · GLOBAL REACH
+        </span>
+
+        <h1 class="font-display font-bold text-[2.6rem] leading-[1.08] sm:text-5xl lg:text-[3.3rem] mt-6">
+          Your application.<br>
+          Your decisions.<br>
+          <span class="font-script text-amberdark text-[3.1rem] sm:text-6xl lg:text-[4rem] font-normal">Be Your Own
+            Agent.</span>
+        </h1>
+
+        <p class="text-muted text-base lg:text-lg mt-6 max-w-md leading-relaxed">
+          StudySail coaches you through admissions, scholarships and visas for the UK, USA, Canada, Australia, Sweden,
+          Hungary, China and Europe — 100% online via Google Meet & Zoom without third-party commission pushing.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 mt-8">
+          <a href="./Contact.html"
+            class="book-btn bg-amber border border-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors shadow-sm">
+            <i data-lucide="video" class="w-4 h-4"></i>
+            <span>Book Online Consultation</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <!-- <a href="https://wa.me/8801700000000?text=Hello%20StudySail%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20scholarship%20coaching."
+            target="_blank" rel="noopener noreferrer"
+            class="bg-white border border-black/15 hover:border-black/30 text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors">
+            <svg class="w-4 h-4 fill-emerald-600" viewBox="0 0 24 24">
+              <path
+                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.926l-1.664 6.074 6.223-1.633c1.7 1.002 3.69 1.633 5.877 1.633 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z" />
+            </svg>
+            <span>WhatsApp Quick Chat</span>
+          </a> -->
+        </div>
+      </div>
+
+      <!-- Boarding pass card -->
+      <div
+        class="ticket bg-creamwhite rounded-2xl border border-black/10 shadow-xl max-w-md mx-auto w-full overflow-hidden">
+        <div class="bg-amber/90 flex items-center justify-between px-6 py-3.5">
+          <span class="font-semibold text-sm flex items-center gap-2">BOARDING PASS</span>
+          <span class="text-xs font-semibold tracking-wide">SEAT 01A</span>
+        </div>
+
+        <div class="px-6 pt-7 pb-5 flex items-start justify-between">
+          <div>
+            <p class="text-[11px] tracking-widest text-muted">FROM</p>
+            <p class="font-display font-bold text-3xl mt-1">DAC</p>
+            <p class="text-xs text-muted mt-1">Dhaka</p>
+          </div>
+          <div class="mt-4 text-amberdark text-xl">✈</div>
+          <div class="text-right">
+            <p class="text-[11px] tracking-widest text-muted">TO</p>
+            <p class="font-display font-bold text-3xl mt-1">ANY</p>
+            <p class="text-xs text-muted mt-1">Your choice</p>
+          </div>
+        </div>
+
+        <div class="dashed-x mx-6"></div>
+
+        <div class="px-6 py-5 grid grid-cols-3 gap-2">
+          <div>
+            <p class="text-[10px] tracking-widest text-muted">PASSENGER</p>
+            <p class="font-semibold text-sm mt-1">You</p>
+          </div>
+          <div>
+            <p class="text-[10px] tracking-widest text-muted">CLASS</p>
+            <p class="font-semibold text-sm mt-1">Self-guided</p>
+          </div>
+          <div>
+            <p class="text-[10px] tracking-widest text-muted">STATUS</p>
+            <p class="font-semibold text-sm mt-1">Confirmed</p>
+          </div>
+        </div>
+
+        <div class="px-6 pb-6 pt-2">
+          <div
+            class="h-10 w-full rounded bg-[repeating-linear-gradient(90deg,#1C1C1A_0px,#1C1C1A_2px,transparent_2px,transparent_5px)] opacity-80">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <!-- <section class="bg-creamlight border-b border-black/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-14 grid grid-cols-2 lg:grid-cols-4 gap-10 text-center lg:text-left">
+      <div>
+        <p class="font-display font-bold text-4xl lg:text-5xl text-ink">500+</p>
+        <p class="text-muted text-sm mt-2 flex items-center justify-center lg:justify-start gap-1.5">
+          <i data-lucide="users" class="w-4 h-4 text-amber"></i> Students Guided Online
+        </p>
+      </div>
+      <div>
+        <p class="font-display font-bold text-4xl lg:text-5xl text-ink">320+</p>
+        <p class="text-muted text-sm mt-2 flex items-center justify-center lg:justify-start gap-1.5">
+          <i data-lucide="file-check" class="w-4 h-4 text-emerald-600"></i> Visas & Permits Approved
+        </p>
+      </div>
+      <div>
+        <p class="font-display font-bold text-4xl lg:text-5xl text-ink">18</p>
+        <p class="text-muted text-sm mt-2 flex items-center justify-center lg:justify-start gap-1.5">
+          <i data-lucide="globe" class="w-4 h-4 text-blue-600"></i> Partner Destinations
+        </p>
+      </div>
+      <div>
+        <p class="font-display font-bold text-4xl lg:text-5xl text-ink">98%</p>
+        <p class="text-muted text-sm mt-2 flex items-center justify-center lg:justify-start gap-1.5">
+          <i data-lucide="star" class="w-4 h-4 text-amber"></i> Satisfaction & Referrals
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ===================== WHAT WE DO ===================== -->
+  <section class="bg-[#FAF7EC] py-24 px-6 lg:px-16 border-b border-black/5">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+        <div>
+          <div class="text-[10px] font-bold text-muted tracking-widest mb-3 uppercase flex items-center space-x-2">
+            <span class="w-6 h-px bg-gray-400 block"></span>
+            <span>What we do</span>
+          </div>
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-ink font-display">Six steps to your funded offer letter
+          </h2>
+        </div>
+        <a href="./Service.html"
+          class="text-sm font-bold text-ink hover:text-amberdark mt-4 md:mt-0 transition flex items-center space-x-1.5">
+          <span>All services</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Service Card 1 -->
+        <a href="./Services/university-course-selection.html"
+          class="lift bg-white rounded-2xl p-7 shadow-sm border border-black/10 relative overflow-hidden block">
+          <div
+            class="flex items-center justify-between text-xs text-muted font-bold mb-4 border-b border-dashed border-black/10 pb-3">
+            <span>01 / 06</span>
+            <i data-lucide="compass" class="w-4 h-4 text-amber"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg mb-2 text-ink">University & Course Selection</h3>
+          <p class="text-xs text-muted leading-relaxed">Conceptualizing a targeted short list that truly fits your
+            profile, budget, and career goals.</p>
+        </a>
+
+        <!-- Service Card 2 -->
+        <a href="./Services/application-assistance.html"
+          class="lift bg-white rounded-2xl p-7 shadow-sm border border-black/10 relative overflow-hidden block">
+          <div
+            class="flex items-center justify-between text-xs text-muted font-bold mb-4 border-b border-dashed border-black/10 pb-3">
+            <span>02 / 06</span>
+            <i data-lucide="file-edit" class="w-4 h-4 text-amber"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg mb-2 text-ink">Application Assistance</h3>
+          <p class="text-xs text-muted leading-relaxed">Step-by-step online screen-share help preparing and submitting
+            your core university portal files.</p>
+        </a>
+
+        <!-- Service Card 3 -->
+        <a href="./Services/sop-lor-guidance.html"
+          class="lift bg-white rounded-2xl p-7 shadow-sm border border-black/10 relative overflow-hidden block">
+          <div
+            class="flex items-center justify-between text-xs text-muted font-bold mb-4 border-b border-dashed border-black/10 pb-3">
+            <span>03 / 06</span>
+            <i data-lucide="book-open" class="w-4 h-4 text-amber"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg mb-2 text-ink">SOP & LOR Guidance</h3>
+          <p class="text-xs text-muted leading-relaxed">1-on-1 coaching to help you write authentic, winning Statements
+            of Purpose and referee kits.</p>
+        </a>
+
+        <!-- Service Card 4 -->
+        <a href="./Services/visa-application-support.html"
+          class="lift bg-white rounded-2xl p-7 shadow-sm border border-black/10 relative overflow-hidden block">
+          <div
+            class="flex items-center justify-between text-xs text-muted font-bold mb-4 border-b border-dashed border-black/10 pb-3">
+            <span>04 / 06</span>
+            <i data-lucide="shield-check" class="w-4 h-4 text-amber"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg mb-2 text-ink">Visa Application Support</h3>
+          <p class="text-xs text-muted leading-relaxed">End-to-end guidance, financial sponsorship verification,
+            checklists & rigorous mock embassy interviews.</p>
+        </a>
+
+        <!-- Service Card 5 -->
+        <a href="./Scholarship.html"
+          class="lift bg-white rounded-2xl p-7 shadow-sm border border-black/10 relative overflow-hidden block">
+          <div
+            class="flex items-center justify-between text-xs text-muted font-bold mb-4 border-b border-dashed border-black/10 pb-3">
+            <span>05 / 06</span>
+            <i data-lucide="award" class="w-4 h-4 text-amber"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg mb-2 text-ink">Scholarship & Funding</h3>
+          <p class="text-xs text-muted leading-relaxed">Find and apply to full government awards (SI, CSC, Stipendium,
+            Chevening, MEXT, Fulbright) tailored to your grades.</p>
+        </a>
+
+        <!-- Service Card 6 -->
+        <a href="./Success-Stories.html"
+          class="lift bg-white rounded-2xl p-7 shadow-sm border border-black/10 relative overflow-hidden block">
+          <div
+            class="flex items-center justify-between text-xs text-muted font-bold mb-4 border-b border-dashed border-black/10 pb-3">
+            <span>06 / 06</span>
+            <i data-lucide="sparkles" class="w-4 h-4 text-amber"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg mb-2 text-ink">Student Success Stories</h3>
+          <p class="text-xs text-muted leading-relaxed">Real case studies of Bangladeshi applicants who achieved fully
+            funded awards through online mentorship.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DESTINATIONS & UNIVERSITIES ===================== -->
+  <section class="bg-[#FEFCF6] py-24 px-6 lg:px-16 border-b border-black/5">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 text-center lg:text-left">
+        <div
+          class="text-[10px] font-bold text-muted tracking-widest mb-3 uppercase flex items-center justify-center lg:justify-start space-x-2">
+          <span class="w-6 h-px bg-gray-400 block"></span>
+          <span>Where you could go</span>
+        </div>
+        <h2 class="text-3xl lg:text-4xl font-extrabold text-ink font-display">Destinations we coach inside out</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- UK -->
+        <div class="lift border border-black/10 rounded-2xl p-6 bg-white flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=200&q=80"
+            alt="UK" class="w-14 h-14 rounded-xl object-cover" />
+          <div>
+            <div class="font-display font-bold text-base text-ink">United Kingdom</div>
+            <div class="text-xs text-muted">Chevening, Russell Group, Post-Study Work</div>
+          </div>
+        </div>
+
+        <!-- USA -->
+        <div class="lift border border-black/10 rounded-2xl p-6 bg-white flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=200&q=80"
+            alt="USA" class="w-14 h-14 rounded-xl object-cover" />
+          <div>
+            <div class="font-display font-bold text-base text-ink">United States</div>
+            <div class="text-xs text-muted">Fulbright, RA/TA Waiver, Common App</div>
+          </div>
+        </div>
+
+        <!-- Sweden -->
+        <div class="lift border border-black/10 rounded-2xl p-6 bg-white flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&w=200&q=80"
+            alt="Sweden" class="w-14 h-14 rounded-xl object-cover" />
+          <div>
+            <div class="font-display font-bold text-base text-ink">Sweden</div>
+            <div class="text-xs text-muted">SI Global Professionals, English Taught MSc</div>
+          </div>
+        </div>
+
+        <!-- Hungary -->
+        <div class="lift border border-black/10 rounded-2xl p-6 bg-white flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?auto=format&fit=crop&w=200&q=80"
+            alt="Hungary" class="w-14 h-14 rounded-xl object-cover" />
+          <div>
+            <div class="font-display font-bold text-base text-ink">Hungary</div>
+            <div class="text-xs text-muted">Stipendium Hungaricum, 100% Free Tuition</div>
+          </div>
+        </div>
+
+        <!-- China -->
+        <div class="lift border border-black/10 rounded-2xl p-6 bg-white flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=200&q=80"
+            alt="China" class="w-14 h-14 rounded-xl object-cover" />
+          <div>
+            <div class="font-display font-bold text-base text-ink">China</div>
+            <div class="text-xs text-muted">CSC Type A & B, Full Stipend & Housing</div>
+          </div>
+        </div>
+
+        <!-- Australia -->
+        <div class="lift border border-black/10 rounded-2xl p-6 bg-white flex items-center gap-4">
+          <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=200&q=80"
+            alt="Australia" class="w-14 h-14 rounded-xl object-cover" />
+          <div>
+            <div class="font-display font-bold text-base text-ink">Australia</div>
+            <div class="text-xs text-muted">RTP Scholarship, MRes, Group of Eight</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Why StudySailBD ===================== -->
+  <section style="background-color:#F3EEDD;">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20 grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-6 h-px block" style="background-color:#7A7768;"></span>
+          <p class="text-[11px] font-bold tracking-widest uppercase"
+            style="font-family:'Space Grotesk',sans-serif; color:#7A7768;">Why StudySailBD</p>
+        </div>
+
+        <h2 class="font-bold text-3xl lg:text-4xl leading-tight mb-6" style="font-family:'Space Grotesk',sans-serif;">
+          A guide walks beside you. An agent walks in front.
+        </h2>
+
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3 text-sm" style="color:#7A7768;">
+            <span class="mt-0.5" style="color:#E0952A;">✓</span>
+            <span>You keep every portal login and sign every form yourself.</span>
+          </li>
+          <li class="flex items-start gap-3 text-sm" style="color:#7A7768;">
+            <span class="mt-0.5" style="color:#E0952A;">✓</span>
+            <span>Honest shortlists — no commission-driven university pushing.</span>
+          </li>
+          <li class="flex items-start gap-3 text-sm" style="color:#7A7768;">
+            <span class="mt-0.5" style="color:#E0952A;">✓</span>
+            <span>Mock visa interviews modelled on real consulate questions.</span>
+          </li>
+          <li class="flex items-start gap-3 text-sm" style="color:#7A7768;">
+            <span class="mt-0.5" style="color:#E0952A;">✓</span>
+            <span>Scholarship mapping tied to your actual eligibility.</span>
+          </li>
+        </ul>
+
+        <a href="./About.html"
+          class="inline-block border border-black/15 hover:border-black/40 font-semibold px-6 py-3 rounded-full transition-colors">Read
+          our story</a>
+      </div>
+
+      <div class="border border-black/10 rounded-2xl p-8 shadow-sm" style="background-color:#FEFCF6;">
+        <p class="text-xs font-semibold tracking-widest mb-4" style="color:#7A7768;">THE PROMISE</p>
+        <p class="text-2xl lg:text-3xl leading-snug" style="font-family:'Caveat',cursive; font-weight:600;">
+          By the time you land, you'll know your own case better than any agent could.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ONLINE CONSULTATION CTA BANNER ===================== -->
+  <section class="bg-[#FEFCF6] py-20 px-6 lg:px-10">
+    <div
+      class="max-w-5xl mx-auto dot-grid bg-white border border-black/10 rounded-3xl p-10 lg:p-14 text-center shadow-lg">
+      <div
+        class="inline-flex items-center gap-1.5 bg-cream px-3 py-1 rounded-full text-xs font-bold text-amberdark mb-4">
+        <i data-lucide="video" class="w-3.5 h-3.5 text-amber"></i> 100% VIRTUAL APPOINTMENTS
+      </div>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl text-ink mb-4">Ready to discuss your profile online?</h2>
+      <p class="text-muted text-base max-w-xl mx-auto mb-8 leading-relaxed">
+        One video session is enough to review your transcripts, test scores, and outline your target scholarship
+        timeline.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="./Contact.html"
+          class="bg-amber hover:bg-amberdark text-ink font-semibold px-8 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Book Free Video Meeting</span>
+        </a>
+        <a href="https://wa.me/8801700000000?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20consultation."
+          target="_blank" rel="noopener noreferrer"
+          class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold px-7 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.926l-1.664 6.074 6.223-1.633c1.7 1.002 3.69 1.633 5.877 1.633 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z" />
+          </svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER (dynamic) ===================== -->
+  <div id="global-footer-root"></div>
+
+  <script type="module" src="./assets/script/global.js"></script>
+
+</body>
+
+</html>

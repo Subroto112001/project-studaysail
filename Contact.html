@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Online Consultation — StudySail</title>
+    <meta name="description"
+        content="Book a 1-on-1 online video consultation with StudySail via Google Meet or Zoom. 100% remote educational mentorship for admissions and scholarships.">
+
+    <!-- Tailwind CSS (required) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F3EEDD',
+                        creamlight: '#FAF7EC',
+                        creamwhite: '#FEFCF6',
+                        ink: '#032249',
+                        amber: '#BD9147',
+                        amberdark: '#96742E',
+                        muted: '#5F6B79'
+                    },
+                    fontFamily: {
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        body: ['"Inter"', 'sans-serif'],
+                        script: ['"Caveat"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="./assets/CSS/Contact.css">
+</head>
+
+<body class="font-body text-[#032249] antialiased">
+    <!-- ===================== HEADER (dynamic) ===================== -->
+    <div id="global-header-root"></div>
+
+    <!-- ===================== CONTACT HERO ===================== -->
+    <section class="pt-16 pb-14 lg:pt-20 lg:pb-16 px-6 lg:px-10 dot-grid bg-cream border-b border-black/5">
+        <div class="max-w-7xl mx-auto flex flex-col justify-center items-center">
+            <div class="flex items-center flex-col">
+                <div class="flex items-center gap-2 mb-4">
+                    <span
+                        class="inline-flex items-center gap-1.5 bg-creamwhite border border-black/10 rounded-full px-3.5 py-1 text-xs font-bold text-amberdark tracking-wider uppercase">
+                        <i data-lucide="video" class="w-3.5 h-3.5 text-amber"></i> 100% ONLINE CONSULTATION
+                    </span>
+                </div>
+
+                <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-[3.2rem] leading-[1.1] mb-6 text-ink">
+                    Book your free online consultation
+                </h1>
+
+                <p class="text-muted text-base lg:text-lg max-w-5xl leading-relaxed mb-8 items-center text-center">
+                    We operate 100% remotely. Enjoy a dedicated 45-minute 1-on-1 strategy session via Google Meet or
+                    Zoom to assess your profile, test scores, target scholarships, and funding roadmap.
+                </p>
+
+                <!-- Quick Stats / Badges -->
+                <div class="flex flex-wrap items-center gap-3 text-xs font-semibold text-ink">
+                    <div class="flex items-center gap-1.5 bg-creamwhite border border-black/10 px-3.5 py-2 rounded-xl">
+                        <i data-lucide="clock" class="w-4 h-4 text-amber"></i>
+                        <span>10:00 AM – 10:00 PM BST</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 bg-creamwhite border border-black/10 px-3.5 py-2 rounded-xl">
+                        <i data-lucide="monitor" class="w-4 h-4 text-emerald-600"></i>
+                        <span>Google Meet & Zoom</span>
+                    </div>
+                    <div class="flex items-center gap-1.5 bg-creamwhite border border-black/10 px-3.5 py-2 rounded-xl">
+                        <i data-lucide="globe-2" class="w-4 h-4 text-blue-600"></i>
+                        <span>Students Worldwide</span>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT FORM + ONLINE DETAILS ===================== -->
+    <section class="py-16 lg:py-20 px-6 lg:px-10 bg-cream">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-8">
+
+            <!-- Send an Email Consultation Request Form (7 Cols) -->
+            <div class="lg:col-span-7 rounded-2xl border border-black/10 p-8 lg:p-10 bg-[#FAF7EC] shadow-sm">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="w-6 h-px bg-amberdark block"></span>
+                    <span class="text-muted text-[11px] font-bold tracking-widest uppercase font-display">Email
+                        Consultation Booking</span>
+                </div>
+
+                <h2 class="font-display font-bold text-2xl lg:text-3xl mb-3 text-ink">
+                    Schedule Your Free Strategy Meeting
+                </h2>
+                <p class="text-xs text-muted mb-8 leading-relaxed">
+                    Fill out the form below. We will email you with available Google Meet time slots and an initial
+                    review within 24 hours.
+                </p>
+
+                <form id="consultation-email-form" class="space-y-5" onsubmit="handleEmailSubmit(event)">
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-ink uppercase tracking-wider mb-2">Full name
+                                *</label>
+                            <input type="text" id="form-name" required
+                                class="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-amber focus:ring-1 focus:ring-amber transition-colors bg-creamwhite text-sm"
+                                placeholder="e.g. Subroto Barman">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-ink uppercase tracking-wider mb-2">Email Address
+                                *</label>
+                            <input type="email" id="form-email" required
+                                class="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-amber focus:ring-1 focus:ring-amber transition-colors bg-creamwhite text-sm"
+                                placeholder="e.g. yourname@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-ink uppercase tracking-wider mb-2">Phone /
+                                WhatsApp *</label>
+                            <input type="tel" id="form-phone" required
+                                class="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-amber focus:ring-1 focus:ring-amber transition-colors bg-creamwhite text-sm"
+                                placeholder="e.g. +880 1700-000000">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-ink uppercase tracking-wider mb-2">Target
+                                Destination</label>
+                            <select id="form-destination"
+                                class="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-amber focus:ring-1 focus:ring-amber transition-colors bg-creamwhite text-sm font-medium text-ink">
+                                <option value="Sweden (SI Scholarship)">Sweden (SI Scholarship & Universities)</option>
+                                <option value="Hungary (Stipendium Hungaricum)">Hungary (Stipendium Hungaricum)</option>
+                                <option value="China (CSC Scholarship)">China (CSC Chinese Govt Scholarship)</option>
+                                <option value="United Kingdom (Chevening / MSc)">United Kingdom (Chevening &
+                                    Universities)</option>
+                                <option value="United States (Fulbright / RA / PhD)">United States (Fulbright / RA
+                                    Outreach)</option>
+                                <option value="Japan (MEXT Scholarship)">Japan (MEXT Japanese Govt)</option>
+                                <option value="Czech Republic (Govt Scholarship)">Czech Republic (Govt Scholarship)
+                                </option>
+                                <option value="Australia (RTP / MRes / PhD)">Australia (Supervisor Outreach & RTP)
+                                </option>
+                                <option value="Germany (DAAD / Public Universities)">Germany (DAAD & Public
+                                    Universities)</option>
+                                <option value="Canada (Graduate Admissions)">Canada (Graduate Admissions)</option>
+                                <option value="Multiple / Need Guidance">Multiple / Need Guidance</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-ink uppercase tracking-wider mb-2">Degree
+                                Level</label>
+                            <select id="form-degree"
+                                class="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-amber focus:ring-1 focus:ring-amber transition-colors bg-creamwhite text-sm font-medium text-ink">
+                                <option value="Master's (MSc / MA / LLM)">Master's Degree (MSc / MA / LLM)</option>
+                                <option value="Doctorate (PhD / MRes)">Doctorate (PhD / MRes / Research)</option>
+                                <option value="Bachelor's (BSc / BBA / Common App)">Bachelor's Degree (Undergraduate)
+                                </option>
+                                <option value="Postdoc / Fellowship">Postdoc / Fellowship</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-ink uppercase tracking-wider mb-2">Preferred
+                                Meeting Platform</label>
+                            <select id="form-platform"
+                                class="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-amber focus:ring-1 focus:ring-amber transition-colors bg-creamwhite text-sm font-medium text-ink">
+                                <option value="Google Meet (Video Call)">Google Meet (Recommended)</option>
+                                <option value="Zoom Meeting">Zoom Video Meeting</option>
+                                <option value="WhatsApp Audio/Video">WhatsApp Audio/Video Call</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-ink uppercase tracking-wider mb-2">Your Profile &
+                            Questions (CGPA, IELTS, Goals) *</label>
+                        <textarea id="form-message" rows="4" required
+                            class="w-full rounded-xl border border-black/15 px-4 py-3 outline-none focus:border-amber focus:ring-1 focus:ring-amber transition-colors resize-none bg-creamwhite text-sm"
+                            placeholder="Please share: Your completed degree, CGPA, IELTS/test score (if taken), and what specific scholarship or country you want guidance on."></textarea>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="submit" id="submit-btn"
+                            class="w-full sm:w-auto bg-amber hover:bg-amberdark text-ink font-bold px-8 py-4 rounded-full transition-colors inline-flex items-center justify-center gap-2.5 shadow-md">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>Send Consultation Request via Email</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+
+                    <p class="text-[11px] text-muted flex items-center gap-1.5 mt-2">
+                        <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600"></i>
+                        <span>We respect your privacy. No spam. 100% confidential profile review.</span>
+                    </p>
+                </form>
+
+                <!-- Confirmation Alert Box (Hidden by default) -->
+                <div id="form-success-box" class="hidden mt-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200">
+                    <div class="flex items-start gap-3">
+                        <div
+                            class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
+                            <i data-lucide="check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-display font-bold text-lg text-emerald-900">Consultation Request Received!
+                            </h4>
+                            <p class="text-xs text-emerald-800 mt-1 leading-relaxed">
+                                Thank you for your submission. Our academic mentors will review your profile details and
+                                send your Google Meet / Zoom confirmation invitation to your email within 24 hours.
+                            </p>
+                            <div class="mt-3 flex items-center gap-3">
+                                <a href="https://wa.me/8801700000000?text=Hello%20StudySail%2C%20I%20just%20submitted%20the%20consultation%20request%20form."
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="text-xs font-bold text-emerald-700 hover:underline flex items-center gap-1">
+                                    <span>Follow up instantly on WhatsApp</span> →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: 100% Remote Hub & Social Channels (5 Cols) -->
+            <div class="lg:col-span-5 flex flex-col gap-6">
+
+                <!-- 100% Online Operations Card -->
+                <div class="rounded-2xl border border-black/10 p-7 lg:p-8 bg-creamwhite shadow-sm">
+                    <div class="flex items-center gap-2 text-amberdark text-xs font-bold uppercase tracking-wider mb-4">
+                        <i data-lucide="globe" class="w-4 h-4"></i> Virtual Operations
+                    </div>
+                    <h3 class="font-display font-bold text-xl mb-4 text-ink">100% Remote Consultancy</h3>
+                    <p class="text-xs text-muted leading-relaxed mb-6">
+                        StudySail has no physical branch to keep our mentoring fees honest and our coaching accessible
+                        to students across all districts of Bangladesh and overseas.
+                    </p>
+
+                    <ul class="space-y-4 text-xs text-ink">
+                        <li class="flex items-start gap-3 p-3 rounded-xl bg-cream">
+                            <i data-lucide="video" class="w-4 h-4 text-amberdark shrink-0 mt-0.5"></i>
+                            <div>
+                                <span class="font-bold block text-ink">Meeting Platform</span>
+                                <span class="text-muted">Google Meet, Zoom & Microsoft Teams</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 p-3 rounded-xl bg-cream">
+                            <i data-lucide="clock" class="w-4 h-4 text-amberdark shrink-0 mt-0.5"></i>
+                            <div>
+                                <span class="font-bold block text-ink">Consultation Hours</span>
+                                <span class="text-muted">Everyday: 10:00 AM – 10:00 PM BST</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3 p-3 rounded-xl bg-cream">
+                            <i data-lucide="mail" class="w-4 h-4 text-amberdark shrink-0 mt-0.5"></i>
+                            <div>
+                                <span class="font-bold block text-ink">Official Email Desk</span>
+                                <a href="mailto:hello@studysail.com"
+                                    class="text-amberdark font-semibold hover:underline">hello@studysail.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Instant Social Connections Card -->
+                <div class="rounded-2xl border border-black/10 p-7 lg:p-8 bg-creamwhite shadow-sm">
+                    <h3 class="font-display font-bold text-lg mb-2 text-ink">Connect With Us Directly</h3>
+                    <p class="text-xs text-muted leading-relaxed mb-6">
+                        Reach out across our official social and messaging channels:
+                    </p>
+
+                    <div class="space-y-3">
+                        <!-- WhatsApp Button -->
+                        <a href="https://wa.me/8801700000000?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation."
+                            target="_blank" rel="noopener noreferrer"
+                            class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs py-3.5 px-5 rounded-xl transition-all flex items-center justify-between shadow-sm">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.926l-1.664 6.074 6.223-1.633c1.7 1.002 3.69 1.633 5.877 1.633 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <span>WhatsApp (Mobile & Desktop)</span>
+                            </div>
+                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+
+                        <!-- Facebook Button -->
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="w-full bg-[#1877F2] hover:bg-blue-600 text-white font-semibold text-xs py-3.5 px-5 rounded-xl transition-all flex items-center justify-between shadow-sm">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.356 5 15.657 5H18V0h-3.808C10.597 0 9 1.582 9 4.615V8z" />
+                                </svg>
+                                <span>Official Facebook Page</span>
+                            </div>
+                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+
+                        <!-- LinkedIn Button -->
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                            class="w-full bg-[#0A66C2] hover:bg-sky-600 text-white font-semibold text-xs py-3.5 px-5 rounded-xl transition-all flex items-center justify-between shadow-sm">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                                </svg>
+                                <span>LinkedIn Mentorship Network</span>
+                            </div>
+                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER (dynamic) ===================== -->
+    <div id="global-footer-root"></div>
+
+    <script src="./assets/script/global.js"></script>
+
+    <script>
+        function handleEmailSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            const phone = document.getElementById('form-phone').value;
+            const destination = document.getElementById('form-destination').value;
+            const degree = document.getElementById('form-degree').value;
+            const platform = document.getElementById('form-platform').value;
+            const message = document.getElementById('form-message').value;
+
+            // Prepare email mailto fallback or submit payload
+            const subject = encodeURIComponent(`Consultation Booking: ${name} (${destination})`);
+            const body = encodeURIComponent(
+                `Full Name: ${name}\n` +
+                `Email: ${email}\n` +
+                `Phone/WhatsApp: ${phone}\n` +
+                `Target Destination: ${destination}\n` +
+                `Degree: ${degree}\n` +
+                `Platform: ${platform}\n\n` +
+                `Profile Details & Message:\n${message}`
+            );
+
+            // Display success message UI in page
+            const successBox = document.getElementById('form-success-box');
+            if (successBox) {
+                successBox.classList.remove('hidden');
+                successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            // Trigger mailto client as fallback if needed
+            console.log("Email Consultation Request Prepared:", { name, email, phone, destination, degree, platform, message });
+        }
+    </script>
+</body>
+
+</html>

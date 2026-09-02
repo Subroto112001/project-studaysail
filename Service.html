@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="StudySail Coaching Services — University Application Support (USA & Australia faculty outreach, Common App, One-to-One Mentorship) and Scholarship Support (SI, Stipendium Hungaricum, CSC, Chevening, Czech Republic, Fulbright, MEXT, Erasmus and more).">
+    <title>Our Services | StudySail — Be Your Own Agent</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F3EEDD',
+                        creamlight: '#FAF7EC',
+                        creamwhite: '#FEFCF6',
+                        ink: '#032249',
+                        amber: '#BD9147',
+                        amberdark: '#96742E',
+                        muted: '#5F6B79'
+                    },
+                    fontFamily: {
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        body: ['"Inter"', 'sans-serif'],
+                        script: ['"Caveat"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Global Styles -->
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .font-script {
+            font-family: 'Caveat', cursive;
+        }
+
+        body {
+            background-color: #FEFCF6;
+            color: #032249;
+        }
+
+        .dot-grid {
+            background-image: radial-gradient(circle, rgba(3, 34, 73, 0.10) 1px, transparent 1px);
+            background-size: 22px 22px;
+        }
+
+        .dashed-x {
+            background-image: repeating-linear-gradient(to right, rgba(3, 34, 73, 0.18) 0, rgba(3, 34, 73, 0.18) 6px, transparent 6px, transparent 12px);
+            height: 1px;
+        }
+
+        .nav-item:hover .nav-dropdown {
+            display: block;
+        }
+
+        .lift {
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(3, 34, 73, 0.08);
+        }
+
+        ::selection {
+            background: #BD9147;
+            color: #032249;
+        }
+
+        a,
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="font-body text-ink antialiased flex flex-col min-h-screen">
+
+    <!-- DYNAMIC HEADER MOUNT -->
+    <div id="global-header-root"></div>
+
+    <!-- MAIN CONTENT -->
+    <main role="main" class="flex-grow">
+
+        <!-- Hero Section -->
+        <section class="dot-grid bg-cream pt-16 pb-20 border-b border-black/5" aria-labelledby="services-hero-heading">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 text-center">
+                <span
+                    class="inline-flex items-center gap-2 bg-creamwhite border border-black/10 rounded-full px-4 py-1.5 text-xs font-semibold tracking-wide shadow-sm">
+                    EDUCATIONAL CONSULTANCY SERVICES
+                </span>
+                <h1 id="services-hero-heading"
+                    class="font-display font-bold text-4xl sm:text-5xl lg:text-[3.5rem] mt-6 leading-tight max-w-4xl mx-auto">
+                    University applications and scholarships — <br>
+                    <span
+                        class="font-script text-amberdark text-[3.1rem] sm:text-6xl lg:text-[4.5rem] font-normal">handled
+                        the honest way.</span>
+                </h1>
+                <p class="text-muted text-base lg:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+                    Professional support for applications, faculty communication, and scholarship preparation. Pick
+                    the track that matches your goal.
+                </p>
+            </div>
+        </section>
+
+        <!-- University Application Support -->
+        <section class="bg-creamwhite py-20 border-b border-black/5" aria-label="University Application Support">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="w-6 h-px bg-amberdark block"></span>
+                    <p class="text-amberdark text-xs font-bold tracking-widest uppercase">01 — University Application
+                        Support</p>
+                </div>
+                <h2 class="font-display font-bold text-2xl lg:text-3xl mb-10">Faculty outreach and application
+                    guidance for research-based and undergraduate programs</h2>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                    <a href="./Services/usa-email-application-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="bg-creamlight border-b border-black/5 px-6 pt-6 pb-4">
+                            <p class="text-xs font-bold tracking-widest text-amberdark mb-1">USA</p>
+                            <h3 class="font-display font-bold text-xl lg:text-2xl text-ink">USA Email &amp;
+                                Application Support</h3>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-sm text-muted leading-relaxed mb-6">Shortlisting, faculty emails and
+                                follow-up for Master's (RA-targeted) and PhD programs.</p>
+                            <div class="dashed-x mb-5" aria-hidden="true"></div>
+                            <ul class="space-y-3 mt-auto list-none p-0 m-0">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Up to 25 universities shortlisted</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Faculty emails sent &amp; managed</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Support until final stage</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <a href="./Services/australia-email-application-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="bg-creamlight border-b border-black/5 px-6 pt-6 pb-4">
+                            <p class="text-xs font-bold tracking-widest text-amberdark mb-1">AUSTRALIA</p>
+                            <h3 class="font-display font-bold text-xl lg:text-2xl text-ink">Australia Email &amp;
+                                Application Support</h3>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-sm text-muted leading-relaxed mb-6">Shortlisting, supervisor emails and
+                                follow-up for MRes and PhD programs.</p>
+                            <div class="dashed-x mb-5" aria-hidden="true"></div>
+                            <ul class="space-y-3 mt-auto list-none p-0 m-0">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Up to 25 universities shortlisted</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Supervisor emails sent &amp;
+                                        managed</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Support until final stage</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <a href="./Services/common-app-application-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="bg-creamlight border-b border-black/5 px-6 pt-6 pb-4">
+                            <p class="text-xs font-bold tracking-widest text-amberdark mb-1">UNDERGRADUATE</p>
+                            <h3 class="font-display font-bold text-xl lg:text-2xl text-ink">Common App Application
+                                Support</h3>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-sm text-muted leading-relaxed mb-6">Shortlisting, profile setup and essay
+                                support for undergraduate / Bachelor's programs.</p>
+                            <div class="dashed-x mb-5" aria-hidden="true"></div>
+                            <ul class="space-y-3 mt-auto list-none p-0 m-0">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Common App profile &amp; setup</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Personal &amp; supplemental essays</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-amberdark mt-0.5">✓</span>
+                                    <span class="text-sm font-medium text-ink">Review until submission</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="mt-8">
+                    <a href="./Services/one-to-one-counselling-mentorship.html"
+                        class="lift flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white border border-black/10 rounded-2xl px-6 py-6 shadow-sm">
+                        <div>
+                            <p class="text-xs font-bold tracking-widest text-amberdark mb-1">MENTORSHIP</p>
+                            <h3 class="font-display font-bold text-xl text-ink mb-1">One-to-One Counselling &amp;
+                                Application Mentorship</h3>
+                            <p class="text-sm text-muted leading-relaxed">Personalized guidance for students who
+                                prefer to manage their own applications, end to end.</p>
+                        </div>
+                        <span class="shrink-0 text-amberdark font-semibold text-sm inline-flex items-center gap-2">Learn more <span aria-hidden="true">→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scholarship Support -->
+        <section class="bg-cream py-20 border-b border-black/5" aria-label="Scholarship Support">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="w-6 h-px bg-amberdark block"></span>
+                    <p class="text-amberdark text-xs font-bold tracking-widest uppercase">02 — Scholarship Support
+                    </p>
+                </div>
+                <h2 class="font-display font-bold text-2xl lg:text-3xl mb-10">Complete, step-by-step support for
+                    named scholarships</h2>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
+                    <a href="./Services/si-scholarship-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-display font-bold text-lg text-ink mb-2">SI Scholarship</h3>
+                            <p class="text-xs text-amberdark font-semibold mb-4">Swedish Institute</p>
+                            <p class="text-sm text-muted leading-relaxed">Complete guidance from eligibility to final
+                                submission, plus motivation letter and CV support.</p>
+                        </div>
+                    </a>
+
+                    <a href="./Services/stipendium-hungaricum-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-display font-bold text-lg text-ink mb-2">Stipendium Hungaricum</h3>
+                            <p class="text-xs text-amberdark font-semibold mb-4">Hungary</p>
+                            <p class="text-sm text-muted leading-relaxed">Complete guidance from eligibility to final
+                                submission, plus motivation letter, CV and study plan support.</p>
+                        </div>
+                    </a>
+
+                    <a href="./Services/chinese-csc-scholarship-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-display font-bold text-lg text-ink mb-2">Chinese CSC Scholarship</h3>
+                            <p class="text-xs text-amberdark font-semibold mb-4">Chinese Government Scholarship</p>
+                            <p class="text-sm text-muted leading-relaxed">Includes CSC online application, university
+                                application and police clearance assistance.</p>
+                        </div>
+                    </a>
+
+                    <a href="./Services/chevening-scholarship-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-display font-bold text-lg text-ink mb-2">Chevening Scholarship</h3>
+                            <p class="text-xs text-amberdark font-semibold mb-4">UK Government</p>
+                            <p class="text-sm text-muted leading-relaxed">Essay, referee and application support,
+                                including all four Chevening essays.</p>
+                        </div>
+                    </a>
+
+                    <a href="./Services/erasmus-and-other-scholarships.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-display font-bold text-lg text-ink mb-2">Erasmus &amp; Other
+                                Scholarships</h3>
+                            <p class="text-xs text-amberdark font-semibold mb-4">On demand</p>
+                            <p class="text-sm text-muted leading-relaxed">Flexible support for Erasmus and other
+                                scholarships not listed here — scope tailored to the program.</p>
+                        </div>
+                    </a>
+
+                    <a href="./Services/czech-republic-scholarship-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-display font-bold text-lg text-ink mb-2">Czech Republic Scholarship</h3>
+                            <p class="text-xs text-amberdark font-semibold mb-4">Government of the Czech Republic</p>
+                            <p class="text-sm text-muted leading-relaxed">Complete guidance from eligibility to final
+                                submission, plus motivation letter and CV support.</p>
+                        </div>
+                    </a>
+
+                    <a href="./Services/fulbright-scholarship-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-display font-bold text-lg text-ink mb-2">Fulbright Scholarship</h3>
+                            <p class="text-xs text-amberdark font-semibold mb-4">United States</p>
+                            <p class="text-sm text-muted leading-relaxed">Personal statement, CV and application
+                                guidance from eligibility to final submission.</p>
+                        </div>
+                    </a>
+
+                    <a href="./Services/mext-scholarship-support.html"
+                        class="lift flex flex-col bg-white border border-black/10 rounded-2xl overflow-hidden shadow-sm">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-display font-bold text-lg text-ink mb-2">MEXT Scholarship</h3>
+                            <p class="text-xs text-amberdark font-semibold mb-4">Japanese Government</p>
+                            <p class="text-sm text-muted leading-relaxed">Embassy and university application
+                                guidance, study plan and CV support included.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="dot-grid bg-creamwhite border-y border-black/5" aria-labelledby="cta-heading">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10 py-16">
+                <div
+                    class="bg-cream border border-black/10 rounded-2xl px-8 py-8 lg:px-10 lg:py-9 flex flex-col lg:flex-row lg:items-center justify-between gap-6 shadow-sm">
+                    <div>
+                        <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— FREE · NO OBLIGATION</p>
+                        <h2 id="cta-heading" class="font-display font-bold text-2xl lg:text-3xl mb-2">Ready to take the
+                            wheel?</h2>
+                        <p class="text-muted text-sm">Online or at our Dhaka office. Bring your transcripts and your
+                            questions.</p>
+                    </div>
+                    <a href="./Contact.html" aria-label="Book your free consultation session"
+                        class="book-btn shrink-0 bg-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                        Start with a free session <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- DYNAMIC FOOTER MOUNT -->
+    <div id="global-footer-root"></div>
+
+    <!-- Global Component Script -->
+    <script src="./assets/script/global.js"></script>
+
+</body>
+
+</html>

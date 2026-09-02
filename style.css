@@ -1,0 +1,304 @@
+/* ==========================================================================
+   StudySail — Main Stylesheet
+   Color Palette derived from StudySail Logo:
+   - Primary Navy (Ink): #062047
+   - Dark Navy: #03152F
+   - Brand Gold (Amber): #C59B4B
+   - Dark Gold: #96742E
+   - Light Gold: #F0E3C2
+   - Cream Background: #F3EEDD
+   - Light Cream: #FAF7EC
+   - Off-White Base: #FEFCF6
+   - Muted Slate: #5F6B79
+   ========================================================================== */
+
+:root {
+  --color-navy: #062047;
+  --color-navy-dark: #03152F;
+  --color-navy-light: #0d346b;
+  --color-gold: #C59B4B;
+  --color-gold-dark: #96742E;
+  --color-gold-light: #F4E8C8;
+  --color-cream: #F3EEDD;
+  --color-cream-light: #FAF7EC;
+  --color-cream-white: #FEFCF6;
+  --color-muted: #5F6B79;
+  --color-border: rgba(6, 32, 71, 0.12);
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script: 'Caveat', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream-white);
+  color: var(--color-navy);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+}
+
+/* ----------------- Texture & Utility Styles ----------------- */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(6, 32, 71, 0.08) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+.dot-grid-dark {
+  background-image: radial-gradient(circle, rgba(197, 155, 75, 0.15) 1.2px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+.dashed-x {
+  background-image: repeating-linear-gradient(to right, rgba(6, 32, 71, 0.20) 0, rgba(6, 32, 71, 0.20) 6px, transparent 6px, transparent 12px);
+  height: 1px;
+  width: 100%;
+}
+
+.dashed-y {
+  background-image: repeating-linear-gradient(to bottom, rgba(6, 32, 71, 0.20) 0, rgba(6, 32, 71, 0.20) 6px, transparent 6px, transparent 12px);
+  width: 1px;
+}
+
+/* Boarding Pass Ticket Notches */
+.ticket-card {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ticket-notch-left, .ticket-notch-right {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: var(--color-cream);
+  border-radius: 999px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.ticket-notch-left {
+  left: -11px;
+}
+
+.ticket-notch-right {
+  right: -11px;
+}
+
+/* Interactive Hover Lift */
+.lift {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(6, 32, 71, 0.09);
+  border-color: rgba(197, 155, 75, 0.5);
+}
+
+/* Stamp Effect */
+.stamp {
+  display: inline-block;
+  border: 2px solid var(--color-gold-dark);
+  color: var(--color-gold-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 4px 10px;
+  letter-spacing: 0.1em;
+  transform: rotate(-5deg);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 9999px;
+  border: 1px solid var(--color-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gold-dark);
+  color: #ffffff;
+  border-color: var(--color-gold-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(197, 155, 75, 0.25);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-navy);
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 9999px;
+  border: 1px solid rgba(6, 32, 71, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-gold);
+  background-color: rgba(197, 155, 75, 0.1);
+  color: var(--color-navy);
+}
+
+.btn-navy {
+  background-color: var(--color-navy);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 9999px;
+  border: 1px solid var(--color-navy);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-navy:hover {
+  background-color: var(--color-navy-dark);
+  color: var(--color-gold-light);
+  border-color: var(--color-navy-dark);
+}
+
+/* Nav Dropdown */
+.nav-dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.nav-item:hover .nav-dropdown-menu,
+.nav-item:focus-within .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Badges & Pills */
+.pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.pill-gold {
+  background-color: rgba(197, 155, 75, 0.18);
+  color: var(--color-gold-dark);
+  border: 1px solid rgba(197, 155, 75, 0.3);
+}
+
+.pill-navy {
+  background-color: rgba(6, 32, 71, 0.08);
+  color: var(--color-navy);
+  border: 1px solid rgba(6, 32, 71, 0.15);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(3, 21, 47, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  background-color: #ffffff;
+  border-radius: 24px;
+  border: 1px solid var(--color-border);
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 48px rgba(6, 32, 71, 0.25);
+  transform: scale(0.95) translateY(10px);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-container {
+  transform: scale(1) translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-dark);
+}

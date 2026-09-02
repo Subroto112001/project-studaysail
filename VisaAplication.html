@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Visa Application Support from SoloScholar. Country-specific checklists, financial document review and mock visa interviews — you file, we prepare you to caseworker standard.">
+    <title>Visa Application Support | SoloScholar — Be Your Own Agent</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F3EEDD',
+                        creamlight: '#FAF7EC',
+                        creamwhite: '#FEFCF6',
+                        ink: '#1C1C1A',
+                        amber: '#F0A93B',
+                        amberdark: '#E0952A',
+                        muted: '#7A7768'
+                    },
+                    fontFamily: {
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        body: ['"Inter"', 'sans-serif'],
+                        script: ['"Caveat"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Global Styles -->
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .font-script {
+            font-family: 'Caveat', cursive;
+        }
+
+        body {
+            background-color: #FEFCF6;
+            color: #1C1C1A;
+        }
+
+        .dot-grid {
+            background-image: radial-gradient(circle, rgba(28, 28, 26, 0.10) 1px, transparent 1px);
+            background-size: 22px 22px;
+        }
+
+        .dashed-x {
+            background-image: repeating-linear-gradient(to right, rgba(28, 28, 26, 0.18) 0, rgba(28, 28, 26, 0.18) 6px, transparent 6px, transparent 12px);
+            height: 1px;
+        }
+
+        .nav-item:hover .nav-dropdown {
+            display: block;
+        }
+
+        .lift {
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(28, 28, 26, 0.08);
+        }
+
+        ::selection {
+            background: #F0A93B;
+            color: #1C1C1A;
+        }
+
+        a,
+        button {
+            cursor: pointer;
+        }
+
+        .stamp {
+            transform: rotate(-8deg);
+            border: 2px solid #E0952A;
+            color: #E0952A;
+        }
+    </style>
+</head>
+
+<body class="font-body text-ink antialiased flex flex-col min-h-screen">
+
+    <!-- DYNAMIC HEADER MOUNT -->
+    <div id="global-header-root"></div>
+
+    <!-- MAIN CONTENT -->
+    <main role="main" class="flex-grow">
+
+        <!-- Hero Section -->
+        <section class="dot-grid bg-creamwhite pt-16 pb-14 border-b border-black/5"
+            aria-labelledby="service-hero-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <a href="./Service.html"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-ink transition-colors">
+                    <span aria-hidden="true">←</span> All services
+                </a>
+
+                <div class="mt-8 flex items-center gap-3">
+                    <span
+                        class="inline-flex items-center bg-cream border border-black/10 rounded-full px-3 py-1 text-xs font-bold tracking-widest text-amberdark">SS-04</span>
+                    <span class="text-xs font-semibold tracking-widest text-muted">SERVICE</span>
+                </div>
+
+                <h1 id="service-hero-heading"
+                    class="font-display font-bold text-4xl sm:text-5xl lg:text-[3.4rem] mt-5 leading-[1.05] max-w-3xl">
+                    Visa Application Support
+                </h1>
+
+                <p class="text-muted text-base lg:text-lg mt-6 max-w-2xl leading-relaxed">
+                    Most refusals come from money trails and weak interviews, not weak profiles.
+                    We prepare both to caseworker standard.
+                </p>
+
+                <div class="mt-8 flex flex-wrap items-center gap-4">
+                    <button aria-label="Book a free consultation session"
+                        class="book-btn shrink-0 bg-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                        Book a free session
+                    </button>
+                    <a href="./Service.html"
+                        class="shrink-0 bg-transparent border border-black/15 hover:border-black/30 text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                        Compare services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deliverables Section -->
+        <section class="bg-cream py-20 border-b border-black/5" aria-labelledby="deliverables-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— WHAT YOU GET</p>
+                <h2 id="deliverables-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Deliverables,
+                    not promises</h2>
+
+                <div class="grid lg:grid-cols-[1fr_1fr_0.85fr] gap-6 lg:gap-8">
+                    <!-- Deliverables 2x2 grid -->
+                    <div class="lg:col-span-2 grid sm:grid-cols-2 gap-6">
+                        <article class="bg-white border border-black/10 rounded-2xl p-6">
+                            <h3 class="font-display font-bold text-lg mb-2">Country-specific checklist</h3>
+                            <p class="text-sm text-muted leading-relaxed">Exact documents in the order the caseworker
+                                reads them.</p>
+                        </article>
+                        <article class="bg-white border border-black/10 rounded-2xl p-6">
+                            <h3 class="font-display font-bold text-lg mb-2">Financial review</h3>
+                            <p class="text-sm text-muted leading-relaxed">Bank statements, sponsor affidavits, loan
+                                letters and blocked accounts stress-tested.</p>
+                        </article>
+                        <article class="bg-white border border-black/10 rounded-2xl p-6">
+                            <h3 class="font-display font-bold text-lg mb-2">Mock visa interview</h3>
+                            <p class="text-sm text-muted leading-relaxed">Recorded practice with feedback — two
+                                rounds for US and Australia.</p>
+                        </article>
+                        <article class="bg-white border border-black/10 rounded-2xl p-6">
+                            <h3 class="font-display font-bold text-lg mb-2">Refusal-risk report</h3>
+                            <p class="text-sm text-muted leading-relaxed">Weak points flagged in writing before you
+                                file.</p>
+                        </article>
+                    </div>
+
+                    <!-- Who this is for sidebar -->
+                    <aside class="bg-white border border-black/10 rounded-2xl p-6 h-fit">
+                        <h3 class="font-display font-bold text-base mb-4">Who this is for</h3>
+                        <ul class="space-y-3 list-none p-0 m-0">
+                            <li class="flex items-start gap-2.5 text-sm">
+                                <span class="text-amberdark mt-0.5" aria-hidden="true">✓</span>
+                                <span>UK Student Route, US F-1, Canada study permit and Subclass 500
+                                    applicants</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-sm">
+                                <span class="text-amberdark mt-0.5" aria-hidden="true">✓</span>
+                                <span>Students with sponsor-funded or loan-funded finances</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 text-sm">
+                                <span class="text-amberdark mt-0.5" aria-hidden="true">✓</span>
+                                <span>Anyone with a previous refusal</span>
+                            </li>
+                        </ul>
+
+                        <div class="dashed-x my-5" aria-hidden="true"></div>
+
+                        <p class="text-xs font-semibold tracking-widest text-muted mb-3">INCLUDED</p>
+                        <ul class="space-y-2 list-none p-0 m-0 text-sm text-ink">
+                            <li>• Country-specific checklists</li>
+                            <li>• Financial document review</li>
+                            <li>• Mock visa interviews</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Runs Section -->
+        <section class="bg-creamwhite py-20 border-b border-black/5" aria-labelledby="process-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— HOW IT RUNS</p>
+                <h2 id="process-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Three steps, your
+                    hands on the controls</h2>
+
+                <div class="grid sm:grid-cols-3 gap-6 lg:gap-8">
+                    <article class="border border-black/10 rounded-2xl p-6">
+                        <p class="font-script text-amberdark text-4xl leading-none mb-3">01</p>
+                        <h3 class="font-display font-bold text-lg mb-2">Checklist handover</h3>
+                        <p class="text-sm text-muted leading-relaxed">As soon as you have your offer and CAS/I-20
+                            pathway.</p>
+                    </article>
+                    <article class="border border-black/10 rounded-2xl p-6">
+                        <p class="font-script text-amberdark text-4xl leading-none mb-3">02</p>
+                        <h3 class="font-display font-bold text-lg mb-2">Document review</h3>
+                        <p class="text-sm text-muted leading-relaxed">Every financial and supporting paper checked
+                            twice.</p>
+                    </article>
+                    <article class="border border-black/10 rounded-2xl p-6">
+                        <p class="font-script text-amberdark text-4xl leading-none mb-3">03</p>
+                        <h3 class="font-display font-bold text-lg mb-2">Mock interview</h3>
+                        <p class="text-sm text-muted leading-relaxed">Then you file and attend, fully rehearsed.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="dot-grid bg-cream py-20" aria-labelledby="faq-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— QUESTIONS</p>
+                <h2 id="faq-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">About this service</h2>
+
+                <div class="grid sm:grid-cols-2 gap-6 mb-16">
+                    <article class="bg-creamwhite border border-black/10 rounded-2xl p-6">
+                        <h3 class="font-display font-bold text-base mb-2">Do you guarantee a visa?</h3>
+                        <p class="text-sm text-muted leading-relaxed">No honest advisor can. We prepare you to the
+                            standard caseworkers expect and tell you plainly if a profile is weak.</p>
+                    </article>
+                    <article class="bg-creamwhite border border-black/10 rounded-2xl p-6">
+                        <h3 class="font-display font-bold text-base mb-2">Can you help after a refusal?</h3>
+                        <p class="text-sm text-muted leading-relaxed">Yes — we read the refusal letter, identify the
+                            ground and plan a stronger re-application.</p>
+                    </article>
+                </div>
+
+                <!-- Next Step CTA -->
+                <div
+                    class="bg-creamwhite border border-black/10 rounded-2xl px-8 py-10 lg:px-10 lg:py-12 relative overflow-hidden shadow-sm">
+                    <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— NEXT STEP</p>
+                    <h2 class="font-display font-bold text-2xl lg:text-3xl mb-4 max-w-md">Sit the mock interview
+                        before the real one.</h2>
+                    <p class="text-muted text-sm max-w-md mb-8 leading-relaxed">Financial documents checked against
+                        the caseworker's list, then a recorded mock interview with the questions that actually get
+                        asked.</p>
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <button aria-label="Book a mock visa interview"
+                            class="book-btn shrink-0 bg-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                            Book a mock interview
+                        </button>
+                        <a href="#deliverables-heading"
+                            class="shrink-0 bg-transparent border border-black/15 hover:border-black/30 text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                            See the visa checklist
+                        </a>
+                    </div>
+
+                    <div class="hidden lg:block absolute top-8 right-10 text-right">
+                        <span
+                            class="stamp inline-block font-display font-bold text-sm tracking-widest px-4 py-2 rounded-lg">APPROVED</span>
+                        <p class="text-[11px] font-semibold tracking-widest text-muted mt-3">REFUSED BEFORE? BRING
+                            THE LETTER.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Services Section -->
+        <section class="bg-creamwhite py-20" aria-labelledby="other-services-heading">
+            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+                <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— CONTINUE</p>
+                <h2 id="other-services-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Other
+                    services</h2>
+
+                <div id="other-services-grid" class="grid sm:grid-cols-3 gap-6"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- DYNAMIC FOOTER MOUNT -->
+    <div id="global-footer-root"></div>
+
+    <!-- Global Component Script -->
+    <script src="./assets/script/global.js"></script>
+
+    <!-- Page-Specific Script -->
+    <script>
+        const otherServices = [
+            { code: "SS-01", title: "University & Course Selection", desc: "Personalized shortlisting based on your profile, budget and career goals.", href: "./services-university-course-selection.html" },
+            { code: "SS-02", title: "Application Assistance", desc: "Step-by-step help preparing and submitting your own application.", href: "./services-application-assistance.html" },
+            { code: "SS-03", title: "SOP & LOR Guidance", desc: "Coaching so you write a compelling Statement of Purpose yourself.", href: "./services-sop-lor-guidance.html" }
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const grid = document.getElementById("other-services-grid");
+            grid.innerHTML = otherServices.map(s => `
+        <a href="${s.href}" class="lift block bg-white border border-black/10 rounded-2xl p-6" aria-label="${s.title}">
+          <p class="text-xs font-bold tracking-widest text-amberdark mb-2">${s.code}</p>
+          <h3 class="font-display font-bold text-lg mb-2 text-ink">${s.title}</h3>
+          <p class="text-sm text-muted leading-relaxed">${s.desc}</p>
+        </a>
+      `).join("");
+        });
+    </script>
+</body>
+
+</html>

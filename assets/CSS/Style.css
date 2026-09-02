@@ -1,0 +1,78 @@
+
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-display {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .font-script {
+      font-family: 'Caveat', cursive;
+    }
+
+    body {
+      background-color: #FEFCF6;
+      color: #032249;
+    }
+
+    /* dotted grid background */
+    .dot-grid {
+      background-image: radial-gradient(circle, rgba(3, 34, 73, 0.10) 1px, transparent 1px);
+      background-size: 22px 22px;
+    }
+
+    /* dashed divider */
+    .dashed-x {
+      background-image: repeating-linear-gradient(to right, rgba(3, 34, 73, 0.18) 0, rgba(3, 34, 73, 0.18) 6px, transparent 6px, transparent 12px);
+      height: 1px;
+    }
+
+    /* ticket notches */
+    .ticket {
+      position: relative;
+    }
+
+    .ticket::before,
+    .ticket::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background: #FEFCF6;
+      border-radius: 999px;
+      top: 108px;
+    }
+
+    .ticket::before {
+      left: -12px;
+    }
+
+    .ticket::after {
+      right: -12px;
+    }
+
+    /* card hover lift */
+    .lift {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(3, 34, 73, 0.08);
+    }
+
+    ::selection {
+      background: #BD9147;
+      color: #032249;
+    }
+
+    a,
+    button {
+      cursor: pointer;
+    }
+ 
