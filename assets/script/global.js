@@ -630,7 +630,7 @@
           </a>
               </div>
               <p class="text-gray-300 text-sm leading-relaxed max-w-sm mb-6">
-                Be Your Own Agent. StudySail coaches Bangladeshi and international students through 100% online mentorship, honest admissions, full scholarships, and visa protocols — without commission-driven university pushing.
+                Your Global Education Partner. StudySail coaches Bangladeshi and international students through 100% online mentorship, honest admissions, full scholarships, and visa protocols — without commission-driven university pushing.
               </p>
               
   
