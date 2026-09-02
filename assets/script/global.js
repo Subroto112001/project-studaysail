@@ -484,10 +484,10 @@
 
             <!-- Social Links in Mobile Menu -->
             <div class="pt-4 mt-2 border-t border-black/5 flex items-center gap-4">
-              <a href="https://wa.me/8801700000000?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
+              <a href="https://wa.me/8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
                 <span>WhatsApp</span>
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-200">
+              <a href="https://www.facebook.com/profile.php?id=61593811200768" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-200">
                 <span>Facebook</span>
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-sky-700 bg-sky-50 px-3 py-1.5 rounded-full border border-sky-200">
@@ -558,7 +558,7 @@
         
         <!-- Social Mini Badges -->
         <div id="social-expandable" class="hidden flex-col gap-2 transition-all duration-300">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+          <a href="https://www.facebook.com/profile.php?id=61593811200768" target="_blank" rel="noopener noreferrer" 
              class="flex items-center gap-2 bg-[#1877F2] text-white text-xs font-semibold px-4 py-2 rounded-full shadow-lg hover:scale-105 transition-transform" 
              title="Follow us on Facebook">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.356 5 15.657 5H18V0h-3.808C10.597 0 9 1.582 9 4.615V8z"/></svg>
@@ -584,7 +584,7 @@
             <i data-lucide="share-2" class="w-5 h-5 text-[#032249]"></i>
           </button>
           
-          <a href="https://wa.me/+8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." 
+          <a href="https://wa.me/8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." 
              target="_blank" 
              rel="noopener noreferrer" 
              class="flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm px-5 py-3 rounded-full shadow-2xl hover:scale-105 transition-all group"
@@ -637,14 +637,14 @@
 
               <!-- Social Links -->
               <div class="flex items-center gap-3">
-                <a href="https://wa.me/8801700000000?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." 
+                <a href="https://wa.me/8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation."
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="w-9 h-9 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center transition-colors" 
                    title="Chat on WhatsApp">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.926l-1.664 6.074 6.223-1.633c1.7 1.002 3.69 1.633 5.877 1.633 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                <a href="https://www.facebook.com/profile.php?id=61593811200768" target="_blank" rel="noopener noreferrer" 
                    class="w-9 h-9 rounded-full bg-[#1877F2] hover:bg-blue-600 text-white flex items-center justify-center transition-colors" 
                    title="Facebook Page">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.356 5 15.657 5H18V0h-3.808C10.597 0 9 1.582 9 4.615V8z"/></svg>
@@ -709,8 +709,8 @@
                 </li>
                 <li class="flex items-start gap-2">
                   <i data-lucide="message-square" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                  <a href="https://wa.me/8801700000000?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">
-                    WhatsApp: +880 1700-000000
+                  <a href="https://wa.me/8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">
+                    WhatsApp: +880 1786-825273
                   </a>
                 </li>
                 <li class="flex items-start gap-2">
@@ -729,7 +729,7 @@
           <!-- Bottom Bar -->
           <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
             <p>© 2026 StudySail. All rights reserved.</p>
-            <a href="https://skbarman.com" class="hover:text-[#BD9147] transition-colors">Devloped By Subroto Kumar Barman</a>
+            <a href="https://skbarman.com" class="hover:text-[#BD9147] transition-colors">Developed by Subroto Kumar Barman</a>
           </div>
 
         </div>
