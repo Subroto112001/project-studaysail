@@ -43,52 +43,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- Shared Global Styles -->
-    <style>
-        * {
-            font-family: 'Inter', sans-serif;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        .font-display {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .font-script {
-            font-family: 'Caveat', cursive;
-        }
-
-        body {
-            background-color: #FEFCF6;
-            color: #032249;
-        }
-
-        .dot-grid {
-            background-image: radial-gradient(circle, rgba(3, 34, 73, 0.10) 1px, transparent 1px);
-            background-size: 22px 22px;
-        }
-
-        .lift {
-            transition: transform .25s ease, box-shadow .25s ease;
-        }
-
-        .lift:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(3, 34, 73, 0.08);
-        }
-
-        ::selection {
-            background: #BD9147;
-            color: #032249;
-        }
-
-        a,
-        button {
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/CSS/About.css">
 </head>
 
 <body class="font-body text-ink antialiased flex flex-col min-h-screen">
@@ -147,12 +102,12 @@
                     </div>
                     <div class="flex flex-wrap items-center gap-4">
                         <a href="./Contact.html"
-                            class="book-btn bg-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors">
+                            class="book-btn bg-amber border border-amber hover:bg-transparent text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors">
                             <i data-lucide="video" class="w-4 h-4"></i>
                             <span>Book Free Online Meeting</span>
                         </a>
                         <a href="./Success-Stories.html"
-                            class="bg-white border border-black/15 hover:border-black/30 text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors">
+                            class="bg-white border border-black/15 hover:border-amber hover:bg-transparent text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center gap-2 transition-colors">
                             <i data-lucide="award" class="w-4 h-4 text-amber"></i>
                             <span>View Success Stories</span>
                         </a>
