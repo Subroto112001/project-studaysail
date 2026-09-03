@@ -40,65 +40,46 @@
         rel="stylesheet">
 
     <!-- Shared Global Styles -->
+    <link rel="stylesheet" href="./assets/CSS/Schoolership.css">
+
+    <!-- CTA Background Slider Styles -->
     <style>
-        * {
-            font-family: 'Inter', sans-serif;
+        .cta-slider-section {
+            position: relative;
+            isolation: isolate;
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        .font-display {
-            font-family: 'Space Grotesk', sans-serif;
+        .cta-slider-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            border-radius: inherit;
         }
 
-        .font-script {
-            font-family: 'Caveat', cursive;
+        .cta-slide {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transform: scale(1.06);
+            transition: opacity 1.4s ease-in-out, transform 6s ease-out;
         }
 
-        body {
-            background-color: #FEFCF6;
-            color: #032249;
+        .cta-slide.active {
+            opacity: 1;
+            transform: scale(1);
         }
 
-        .dot-grid {
-            background-image: radial-gradient(circle, rgba(3, 34, 73, 0.10) 1px, transparent 1px);
-            background-size: 22px 22px;
+        .cta-slider-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(3, 34, 73, 0.90) 0%, rgba(3, 34, 73, 0.78) 45%, rgba(150, 116, 46, 0.55) 100%);
         }
 
-        .dashed-x {
-            background-image: repeating-linear-gradient(to right, rgba(3, 34, 73, 0.18) 0, rgba(3, 34, 73, 0.18) 6px, transparent 6px, transparent 12px);
-            height: 1px;
-        }
-
-        .nav-item:hover .nav-dropdown {
-            display: block;
-        }
-
-        .lift {
-            transition: transform .25s ease, box-shadow .25s ease;
-        }
-
-        .lift:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(3, 34, 73, 0.08);
-        }
-
-        ::selection {
-            background: #BD9147;
-            color: #032249;
-        }
-
-        a,
-        button {
-            cursor: pointer;
-        }
-
-        .stamp {
-            transform: rotate(-8deg);
-            border: 2px solid #96742E;
-            color: #96742E;
+        .cta-slider-content {
+            position: relative;
+            z-index: 10;
         }
     </style>
 </head>
@@ -114,15 +95,14 @@
         <!-- Hero Section -->
         <section class="dot-grid bg-creamwhite pt-16 pb-14 border-b border-black/5"
             aria-labelledby="service-hero-heading">
-            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <a href="./Service.html"
                     class="inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-ink transition-colors">
                     <span aria-hidden="true">←</span> All services
                 </a>
 
                 <div class="mt-8 flex items-center gap-3">
-                    <span
-                        class="inline-flex items-center bg-cream border border-black/10 rounded-full px-3 py-1 text-xs font-bold tracking-widest text-amberdark">SS-05</span>
+
                     <span class="text-xs font-semibold tracking-widest text-muted">SCHOLARSHIP &amp; FUNDING</span>
                 </div>
 
@@ -151,7 +131,7 @@
 
         <!-- Deliverables Section -->
         <section class="bg-cream py-20 border-b border-black/5" aria-labelledby="deliverables-heading">
-            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— WHAT YOU GET</p>
                 <h2 id="deliverables-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Deliverables,
                     not promises</h2>
@@ -214,7 +194,7 @@
 
         <!-- Dedicated Scholarships List Section -->
         <section class="bg-creamwhite py-20 border-b border-black/5" aria-labelledby="scholarships-list-heading">
-            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— FULL SCHOLARSHIP PROGRAMS</p>
                 <h2 id="scholarships-list-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Dedicated
                     government and foundation scholarships</h2>
@@ -274,7 +254,7 @@
 
         <!-- How It Runs Section -->
         <section class="bg-creamwhite py-20 border-b border-black/5" aria-labelledby="process-heading">
-            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— HOW IT RUNS</p>
                 <h2 id="process-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Three steps, your
                     hands on the controls</h2>
@@ -302,7 +282,7 @@
 
         <!-- FAQ Section -->
         <section class="dot-grid bg-cream py-20" aria-labelledby="faq-heading">
-            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— QUESTIONS</p>
                 <h2 id="faq-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">About this service</h2>
 
@@ -322,30 +302,51 @@
 
                 <!-- Next Step CTA -->
                 <div
-                    class="bg-creamwhite border border-black/10 rounded-2xl px-8 py-10 lg:px-10 lg:py-12 relative overflow-hidden shadow-sm">
-                    <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— NEXT STEP</p>
-                    <h2 class="font-display font-bold text-2xl lg:text-3xl mb-4 max-w-md">Find the awards you can
-                        actually win.</h2>
-                    <p class="text-muted text-sm max-w-md mb-8 leading-relaxed">We map your CGPA, test score and
-                        subject against live scholarship criteria and hand you a deadline calendar you can work
-                        backwards from.</p>
+                    class="cta-slider-section border border-black/10 rounded-2xl px-8 py-10 lg:px-10 lg:py-12 overflow-hidden shadow-sm">
 
-                    <div class="flex flex-wrap items-center gap-4">
-                        <a href="./Contact.html" aria-label="Map my scholarship eligibility"
-                            class="book-btn shrink-0 bg-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
-                            Map my scholarships
-                        </a>
-                        <a href="./Service.html"
-                            class="shrink-0 bg-transparent border border-black/15 hover:border-black/30 text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
-                            Browse all services
-                        </a>
+                    <!-- Fullscreen Background Slider -->
+                    <div class="cta-slider-bg" aria-hidden="true">
+                        <div class="cta-slide active"
+                            style="background-image: url('https://images.unsplash.com/photo-1612563958093-2c3bcfbd8760?q=80&amp;w=1600&amp;auto=format&amp;fit=crop');">
+                        </div>
+                        <div class="cta-slide"
+                            style="background-image: url('https://images.unsplash.com/photo-1576049519901-ef17971aedc4?q=80&amp;w=1600&amp;auto=format&amp;fit=crop');">
+                        </div>
+                        <div class="cta-slide"
+                            style="background-image: url('https://images.unsplash.com/photo-1700989101224-c4d286d8279a?q=80&amp;w=1600&amp;auto=format&amp;fit=crop');">
+                        </div>
+                        <div class="cta-slider-overlay"></div>
                     </div>
 
-                    <div class="hidden lg:block absolute top-8 right-10 text-right">
-                        <span
-                            class="stamp inline-block font-display font-bold text-sm tracking-widest px-4 py-2 rounded-lg">FUNDED</span>
-                        <p class="text-[11px] font-semibold tracking-widest text-muted mt-3">MOST AWARDS CLOSE 6–9
-                            MONTHS BEFORE INTAKE.</p>
+                    <!-- CTA Content (sits above the slider) -->
+                    <div class="cta-slider-content">
+                        <p class="text-amber text-xs font-semibold tracking-widest mb-2">— NEXT STEP</p>
+                        <h2 class="font-display font-bold text-2xl lg:text-3xl mb-4 max-w-md text-creamwhite">Find the
+                            awards you can
+                            actually win.</h2>
+                        <p class="text-creamwhite/80 text-sm max-w-md mb-8 leading-relaxed">We map your CGPA, test score
+                            and
+                            subject against live scholarship criteria and hand you a deadline calendar you can work
+                            backwards from.</p>
+
+                        <div class="flex flex-wrap items-center gap-4">
+                            <a href="./Contact.html" aria-label="Map my scholarship eligibility"
+                                class="book-btn shrink-0 bg-amber hover:bg-amberdark text-ink font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                                Map my scholarships
+                            </a>
+                            <a href="./Service.html"
+                                class="shrink-0 bg-transparent border border-white/30 hover:border-white/60 text-creamwhite font-semibold px-6 py-3.5 rounded-full inline-flex items-center justify-center gap-2 transition-colors focus:outline-none focus:ring-2 focus:ring-amber focus:ring-offset-2">
+                                Browse all services
+                            </a>
+                        </div>
+
+                        <div class="hidden lg:block absolute top-8 right-10 text-right">
+                            <span
+                                class="stamp inline-block font-display font-bold text-sm tracking-widest px-4 py-2 rounded-lg">FUNDED</span>
+                            <p class="text-[11px] font-semibold tracking-widest text-creamwhite/70 mt-3">MOST AWARDS
+                                CLOSE 6–9
+                                MONTHS BEFORE INTAKE.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -353,7 +354,7 @@
 
         <!-- Other Services Section -->
         <section class="bg-creamwhite py-20" aria-labelledby="other-services-heading">
-            <div class="max-w-5xl mx-auto px-6 lg:px-10">
+            <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <p class="text-amberdark text-xs font-semibold tracking-widest mb-2">— CONTINUE</p>
                 <h2 id="other-services-heading" class="font-display font-bold text-2xl lg:text-3xl mb-10">Other
                     services</h2>
@@ -379,6 +380,17 @@
         ];
 
         document.addEventListener("DOMContentLoaded", () => {
+            // CTA background slider — cycles through 3 images every 3 seconds
+            const ctaSlides = document.querySelectorAll(".cta-slider-bg .cta-slide");
+            if (ctaSlides.length > 1) {
+                let ctaIndex = 0;
+                setInterval(() => {
+                    ctaSlides[ctaIndex].classList.remove("active");
+                    ctaIndex = (ctaIndex + 1) % ctaSlides.length;
+                    ctaSlides[ctaIndex].classList.add("active");
+                }, 3000);
+            }
+
             const grid = document.getElementById("other-services-grid");
             if (grid) {
                 grid.innerHTML = otherServices.map(s => `

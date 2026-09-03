@@ -1,0 +1,59 @@
+ * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .font-script {
+            font-family: 'Caveat', cursive;
+        }
+
+        body {
+            background-color: #FEFCF6;
+            color: #032249;
+        }
+
+        .dot-grid {
+            background-image: radial-gradient(circle, rgba(3, 34, 73, 0.10) 1px, transparent 1px);
+            background-size: 22px 22px;
+        }
+
+        .dashed-x {
+            background-image: repeating-linear-gradient(to right, rgba(3, 34, 73, 0.18) 0, rgba(3, 34, 73, 0.18) 6px, transparent 6px, transparent 12px);
+            height: 1px;
+        }
+
+        .nav-item:hover .nav-dropdown {
+            display: block;
+        }
+
+        .lift {
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(3, 34, 73, 0.08);
+        }
+
+        ::selection {
+            background: #BD9147;
+            color: #032249;
+        }
+
+        a,
+        button {
+            cursor: pointer;
+        }
+
+        .stamp {
+            transform: rotate(-8deg);
+            border: 2px solid #96742E;
+            color: #96742E;
+        }
