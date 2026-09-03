@@ -484,7 +484,7 @@
 
             <!-- Social Links in Mobile Menu -->
             <div class="pt-4 mt-2 border-t border-black/5 flex items-center gap-4">
-              <a href="https://wa.me/8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
+              <a href="https://wa.me/8801341098365?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
                 <span>WhatsApp</span>
               </a>
               <a href="https://www.facebook.com/profile.php?id=61593811200768" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-200">
@@ -584,7 +584,7 @@
             <i data-lucide="share-2" class="w-5 h-5 text-[#032249]"></i>
           </button>
           
-          <a href="https://wa.me/8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." 
+          <a href="https://wa.me/8801341098365?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation."
              target="_blank" 
              rel="noopener noreferrer" 
              class="flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-sm px-5 py-3 rounded-full shadow-2xl hover:scale-105 transition-all group"
@@ -637,7 +637,7 @@
 
               <!-- Social Links -->
               <div class="flex items-center gap-3">
-                <a href="https://wa.me/8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation."
+                <a href="https://wa.me/8801341098365?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation."
                    target="_blank" 
                    rel="noopener noreferrer" 
                    class="w-9 h-9 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center transition-colors" 
@@ -709,8 +709,8 @@
                 </li>
                 <li class="flex items-start gap-2">
                   <i data-lucide="message-square" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                  <a href="https://wa.me/8801786825273?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">
-                    WhatsApp: +880 1786-825273
+                  <a href="https://wa.me/8801341098365?text=Hello%20StudySail%2C%20I%20would%20like%20to%20book%20a%20free%20online%20consultation." target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline">
+                    WhatsApp: +880 1341-098365
                   </a>
                 </li>
                 <li class="flex items-start gap-2">

@@ -827,7 +827,7 @@ const StudySail = {
                   <span class="text-[#C59B4B]">🕒</span> Sat–Thu: 10:00 AM – 7:00 PM
                 </li>
                 <li class="flex items-start gap-2">
-                  <span class="text-[#C59B4B]">💬</span> WhatsApp: +880 1786-825273
+                  <span class="text-[#C59B4B]">💬</span> WhatsApp: +880 1341-098365
                 </li>
                 <li class="flex items-start gap-2">
                   <span class="text-[#C59B4B]">✉️</span> hello@studysail.com
@@ -1323,7 +1323,7 @@ const StudySail = {
 
     const message = `Hello StudySail Dhaka! I would like to book a free consultation session.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email}\n*Target Destination:* ${destination}\n*Target Scholarship/Service:* ${scholarship}\n*Details:* ${notes}`;
 
-    const whatsappUrl = `https://wa.me/8801786825273?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/8801341098365?text=${encodeURIComponent(message)}`;
 
     // Show confirmation in modal
     const container = document.getElementById("consultation-form-inner");
@@ -1357,7 +1357,7 @@ const StudySail = {
 
     const text = `Hello StudySail! My name is ${name} (${email}). I'm interested in studying in ${dest}. My query: ${msg}`;
     window.open(
-      `https://wa.me/8801786825273?text=${encodeURIComponent(text)}`,
+      `https://wa.me/8801341098365?text=${encodeURIComponent(text)}`,
       "_blank",
     );
   },
